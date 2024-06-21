@@ -1,0 +1,15 @@
+importtkinter as tk
+defhandle_button_click():
+ # Event handler for button click
+print("Button clicked!")
+# Create the main application window
+root = tk.Tk()
+root.title("Event Handling GUI")
+# Create a label
+label = tk.Label(root, text="Click the button:")
+label.pack()
+# Create a button and bind the event handler to it
+button = tk.Button(root, text="Click Me", command=handle_button_click)
+button.pack()
+# Start the main event loop
+root.mainloop()
